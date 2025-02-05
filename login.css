@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    overflow-x: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F2D377;
+
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2d37700;
+    background-image: url(image/tulips.png), url(image/cherry-blossom.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: bottom right, top left;
+
+
+}
+
+.form {
+    padding: 60px;
+    background-color: #ffa4ea73;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #3333334f;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+h2 {
+    font-family: "Tangerine", serif;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #33333382;
+margin-bottom: 10px;
+}
+
+.input {
+    padding: 10px;
+    margin: 10px;
+    width: 220px;
+    border-radius: 8px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nome{
+    position: relative;
+    
+}
+label{
+    position: absolute;
+    transform: translateY(-20%);
+    top: 50%;
+    left: 1em;
+    pointer-events: none;
+    transition: .4s;
+    padding:  5px;
+     font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 3px;
+}
+
+input:focus~label,
+input:valid~label{
+    top: 0;
+    font-size: .8em;
+}
+
+#button {
+    background-color: #008726;
+    background-image: url(image/iris.png), url(image/sakura.png);
+    background-position: bottom right, bottom left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 1px #000000;
+}
+
+#button:hover {
+    box-shadow: 3px 3px 1px #000000;
+}
+
+#nome,
+#senha {
+    background-color: #ffe23f;
+    box-shadow: 1px 1px 1px #000000;
+    background-image: url(image/flower.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.bee {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('image/bee.png');
+    background-size: cover;
+    animation: fly 60s  ease;
+}
+
+@keyframes fly {
+    0% {
+        left: 0;
+        top: 0;
+        transform: rotate(0deg);
+    }
+    5% {
+        left: 10%;
+        top: 5%;
+        transform: rotate(18deg);
+    }
+    10% {
+        left: 20%;
+        top: 10%;
+        transform: rotate(36deg);
+    }
+    15% {
+        left: 30%;
+        top: 15%;
+        transform: rotate(54deg);
+    }
+    20% {
+        left: 40%;
+        top: 20%;
+        transform: rotate(72deg);
+    }
+    25% {
+        left: 50%;
+        top: 25%;
+        transform: rotate(90deg);
+    }
+    30% {
+        left: 60%;
+        top: 30%;
+        transform: rotate(108deg);
+    }
+    35% {
+        left: 70%;
+        top: 35%;
+        transform: rotate(126deg);
+    }
+    40% {
+        left: 80%;
+        top: 40%;
+        transform: rotate(144deg);
+    }
+    45% {
+        left: 90%;
+        top: 45%;
+        transform: rotate(162deg);
+    }
+    50% {
+        left: 100%;
+        top: 50%;
+        transform: rotate(180deg);
+    }
+    55% {
+        left: 90%;
+        top: 55%;
+        transform: rotate(198deg);
+    }
+    60% {
+        left: 80%;
+        top: 60%;
+        transform: rotate(216deg);
+    }
+    65% {
+        left: 70%;
+        top: 65%;
+        transform: rotate(234deg);
+    }
+    70% {
+        left: 60%;
+        top: 70%;
+        transform: rotate(252deg);
+    }
+    75% {
+        left: 50%;
+        top: 75%;
+        transform: rotate(270deg);
+    }
+    80% {
+        left: 40%;
+        top: 80%;
+        transform: rotate(288deg);
+    }
+    85% {
+        left: 30%;
+        top: 85%;
+        transform: rotate(306deg);
+    }
+    90% {
+        left: 20%;
+        top: 90%;
+        transform: rotate(324deg);
+    }
+    95% {
+        left: 10%;
+        top: 95%;
+        transform: rotate(342deg);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .form{
+        width: 600px;
+height: 100vh;
+    }
+}
